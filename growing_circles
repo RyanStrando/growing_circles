@@ -1,0 +1,16 @@
+# GROWING CIRCLES
+import turtle
+import random
+
+turtle.speed(0)
+screen = turtle.Screen()
+screen.screensize(1400, 700)
+turtle.ht()
+turtle.penup()
+turtle.setpos(0, -300)
+turtle.pendown()
+
+warm_colors = ("#FE4365", "#FC9D9A", "#F9CDAD", "#C8C8A9", "#83AF9B")
+for i in range(0, 500):
+    turtle.color(random.choice(warm_colors))
+    turtle.circle(i ** 1.1)
